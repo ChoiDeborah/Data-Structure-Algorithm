@@ -6,6 +6,11 @@
 
 using namespace std;
 
+// [ ][ ][ ][ ][ ][ ][ ][ ]
+
+// DFS (Depth First Search) ±íÀÌ ¿ì¼± Å½»ö
+// BFS (Breadth First Search) ³Êºñ ¿ì¼± Å½»ö
+
 void CreateGraph_1()
 {
 	struct Vertex
@@ -125,9 +130,9 @@ void CreateGraph_3()
 	bool connected2 = (adjacent[0][3] != -1);
 }
 
-int main()
-{
-	CreateGraph_1();
-	CreateGraph_2();
-	CreateGraph_3();
-}
+//int main()
+//{
+//	CreateGraph_1();
+//	CreateGraph_2();
+//	CreateGraph_3();
+//}
