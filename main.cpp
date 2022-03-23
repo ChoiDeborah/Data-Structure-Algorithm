@@ -2,9 +2,15 @@
 
 using namespace std;
 
-//int main()
-//{
-//	cout << "Hello World!" << endl;
-//	
-//	return 0;
-//}
+//#define MAIN
+
+#ifdef MAIN
+int main()
+{
+	cout << "Hello World!" << endl;
+	
+	return 0;
+}
+#endif // MAIN
+
+
