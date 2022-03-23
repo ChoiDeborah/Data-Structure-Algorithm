@@ -16,12 +16,12 @@ void Player::Init(Board* board)
 void Player::Update(int64 deltaTick)
 {
 	if (_pathIndex >= _path.size())
-			return;
-	//{
-	//	_board->GenerateMap();
-	//	Init(_board);
-	//	return;
-	//}
+	{
+		_board->GenerateMap();
+		Init(_board);
+		
+		return;
+	}
 
 	_sumTick += deltaTick;
 	if (_sumTick >= MOVE_TICK)
