@@ -16,12 +16,12 @@ void Player::Init(Board* board)
 void Player::Update(int64 deltaTick)
 {
 	if (_pathIndex >= _path.size())
-	{
-		_board->GenerateMap();
-		Init(_board);
-		
-		return;
-	}
+			return;
+	//{
+	//	_board->GenerateMap();
+	//	Init(_board);
+	//	return;
+	//}
 
 	_sumTick += deltaTick;
 	if (_sumTick >= MOVE_TICK)
@@ -326,6 +326,12 @@ void Player::AStar()
 
 		pos = parent[pos];
 
-		std::reverse(_path.begin(), _path.end());
+	}
+
+	std::reverse(_path.begin(), _path.end());
+
+	for (int i = 0; i < _path.size() - 1; ++i)
+	{
+		Pos pos = _path.at(i + 1) - _path.at(i);
 	}
 }

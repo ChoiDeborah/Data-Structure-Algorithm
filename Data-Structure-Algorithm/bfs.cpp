@@ -98,13 +98,13 @@ void BfsAll()
 	}
 }
 
-int main()
-{
-	CreateGraph();
-
-	discovered = vector<bool>(6, false);
-
-	Bfs(0);
-}
+//int main()
+//{
+//	CreateGraph();
+//
+//	discovered = vector<bool>(6, false);
+//
+//	Bfs(0);
+//}
 
 #endif // BFS

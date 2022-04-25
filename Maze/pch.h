@@ -36,6 +36,15 @@ struct Pos
 		return ret;
 	}
 
+
+	Pos operator-(Pos& other)
+	{
+		Pos ret;
+		ret.y = y - other.y;
+		ret.x = x - other.x;
+		return ret;
+	}
+
 	int32 y = 0;
 	int32 x = 0;
 };

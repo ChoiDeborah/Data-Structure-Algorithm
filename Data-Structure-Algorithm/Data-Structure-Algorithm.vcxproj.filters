@@ -27,6 +27,15 @@
     <ClCompile Include="dfs.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="bfs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="tree.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="HelloWorld.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md">
@@ -35,9 +44,15 @@
     <None Include="graph.md">
       <Filter>리소스 파일\memo</Filter>
     </None>
+    <None Include="tree.md">
+      <Filter>리소스 파일\memo</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="file.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="tree.PNG">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>
